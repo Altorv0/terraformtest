@@ -11,9 +11,9 @@ resource "aws_security_group" "instance" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   egress {
-    from_port   = all
-    to_port     = al
-    protocol    = all
+    from_port   = -1
+    to_port     = -1
+    protocol    = -1
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
